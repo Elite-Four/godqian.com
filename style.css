@@ -1,0 +1,75 @@
+body {
+    background: url(back.jpg);
+    position: relative;
+    margin: 0;
+    padding: 8px;
+}
+a {
+    color: #00f;
+}
+a:hover {
+    color: #f00;
+}
+.title {
+    font-size: 50px;
+    color: #f00;
+    font-family: "黑体";
+    text-align: center;
+}
+.subtitle {
+    font-size: 20px;
+    color: #f00;
+    font-family: "黑体";
+    text-align: right;
+}
+.quote {
+    color: #000;
+    font-size: 14px;
+    font-family: "楷体_GB2312";
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5%;
+}
+.plain {
+    color: #000;
+    font-size: 14px;
+    font-family: "宋体";
+}
+.important {
+    font-size: 16px;
+    color: #f00;
+    font-family: "黑体";
+    text-decoration: underline;
+}
+.hidden {
+    font-size: 14px;
+    font-family: "宋体";
+    color: #fff;
+    visibility: hidden;
+}
+
+td {
+    border: 1px solid #000;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #999;
+    opacity: .4;
+    z-index: 0;
+}
+.content {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#list,
+#comment {
+    height: 200px;
+    overflow: auto;
+}
