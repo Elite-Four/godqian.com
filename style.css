@@ -1,4 +1,18 @@
-body {
+#title {
+    background: url(back.jpg);
+    background-size: cover;
+}
+
+#comment {
+    background: url(back.jpg);
+    background-attachment: fixed;
+}
+
+p {
+    text-indent: 32px;
+}
+
+/* body {
     background: url(back.jpg);
     position: relative;
     margin: 0;
@@ -72,4 +86,4 @@ td {
 #comment {
     height: 200px;
     overflow: auto;
-}
+} */
