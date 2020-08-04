@@ -28,14 +28,14 @@
                         <br>
                     </p>
                     <div class="has-text-centered">
-                        <a class="button" href="#content">阅读正文</a>
-                        <a class="button" href="#comment">直接膜拜</a>
+                        <a class="button" href="#content-body">阅读正文</a>
+                        <a class="button" href="#comment-body">直接膜拜</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container">
-            <section id="content" class="section">
+            <section id="content-body" class="section">
                 <p>1月28日，一个值得纪念的日子。</p>
                 <p>在这一天，一篇可以载入口袋对战历史史册的文章，在《掌机迷》上发表了。</p>
                 <p>这篇文章，仿佛是上天赐予我们这些身陷泥潭的训练员来拯救这个乌烟瘴气的口袋界的。</p>
@@ -226,25 +226,25 @@
                 <p class="has-text-right">欢迎加入 Elite-Four <a href="https://github.com/Elite-Four">https://github.com/Elite-Four</a></p>
             </section>
         </section>
-        <section id="comment" class="hero">
+        <section id="comment-body" class="hero">
             <section class="hero-body">
                 <section class="container">
                     <section class="section">
                         <h3 class="title is-3">膜拜处</h3>
-                        <form>
+                        <form id="comment">
                             <div class="field">
                                 <label for="form-name" class="label">您的名字</label>
                                 <div class="control">
-                                    <input id="form-name" class="input" disabled type="text">
+                                    <input id="form-name" class="input" type="text" name="username" required>
                                 </div>
                             </div>
                             <div class="field">
                                 <label class="label">您想说的话</label>
                                 <div class="control">
-                                    <textarea class="textarea" disabled></textarea>
+                                    <textarea class="textarea" name="content" required></textarea>
                                 </div>
                             </div>
-                            <button class="button">奉上</button>
+                            <button type="submit" class="button">奉上</button>
                         </form>
                     </section>
                 </section>
@@ -261,6 +261,7 @@
                 </section>
             </section>
         </section>
+        <script src="//unpkg.com/airtable@0.8.1/build/airtable.browser.js"></script>
         <script src="./index.js"></script>
     </body>
 </html>

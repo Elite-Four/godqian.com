@@ -3,7 +3,7 @@
     background-size: cover;
 }
 
-#comment {
+#comment-body {
     background: url(back.jpg);
     background-attachment: fixed;
 }
