@@ -29,6 +29,13 @@ p {
     text-indent: 32px;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+}
+.table-wrapper table {
+    min-width: 640px;
+}
+
 /* body {
     background: url(back.jpg);
     position: relative;
