@@ -72,8 +72,11 @@ function getList() {
 }
 
 const $comment = document.getElementById('comment');
+const $worship = document.getElementById('worship');
+
 $comment.addEventListener('submit', e => {
     e.preventDefault();
+    $worship.disabled = true;
     const $formItems = e.target.elements;
     const fields = {};
     for (const $item of $formItems) {
@@ -86,8 +89,10 @@ $comment.addEventListener('submit', e => {
     ], (err, records) => {
         if (err) {
             console.error(err);
+            $worship.disabled = false;
             return;
         }
+        $worship.disabled = false;
         e.target.reset();
         insertComments(
             records.map(record => ({
